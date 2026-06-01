@@ -53,12 +53,19 @@ export class FormularzComponent implements OnDestroy {
       }
     });
   }
-
-  private ustawDate(data: Date): void {
-    this.data = `${data.getFullYear()}-${
-      String(data.getMonth() + 1).padStart(2, '0')
+  private ustawDate(data: Date | string): void {
+    let dateObj: Date;
+    
+    if (typeof data === 'string') {
+      dateObj = new Date(data);
+    } else {
+      dateObj = new Date(data);
+    }
+  
+    this.data = `${dateObj.getFullYear()}-${
+      String(dateObj.getMonth() + 1).padStart(2, '0')
     }-${
-      String(data.getDate()).padStart(2, '0')
+      String(dateObj.getDate()).padStart(2, '0')
     }`;
   }
 

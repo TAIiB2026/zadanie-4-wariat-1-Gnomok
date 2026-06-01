@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 04.it\\documents\\github\\zadanie-4-wariat-1-gnomok\\webapi\\webapi\\controllers\\produktcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\produktcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 04.it\\documents\\github\\zadanie-4-wariat-1-gnomok\\webapi\\webapi\\services\\produktservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\produktservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 04.it\\documents\\github\\zadanie-4-wariat-1-gnomok\\webapi\\webapi\\dtos\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dtos\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 04.it\\documents\\github\\zadanie-4-wariat-1-gnomok\\webapi\\webapi\\dtos\\produktdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dtos\\produktdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 04.it\\documents\\github\\zadanie-4-wariat-1-gnomok\\webapi\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -18,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "WebAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "WebAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-01T07:35:26.903Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,10 +44,74 @@
               "RelativeDocumentMoniker": "WebAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Program.cs",
               "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T07:35:20.461Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaginatedResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Dtos\\PaginatedResponse.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Dtos\\PaginatedResponse.cs",
+              "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Dtos\\PaginatedResponse.cs",
+              "RelativeToolTip": "WebAPI\\Dtos\\PaginatedResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:16:22.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProduktController.cs",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Controllers\\ProduktController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ProduktController.cs",
+              "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Controllers\\ProduktController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ProduktController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:55:43.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProduktService.cs",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Services\\ProduktService.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\ProduktService.cs",
+              "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Services\\ProduktService.cs",
+              "RelativeToolTip": "WebAPI\\Services\\ProduktService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:54:05.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProduktDto.cs",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Dtos\\ProduktDto.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Dtos\\ProduktDto.cs",
+              "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Dtos\\ProduktDto.cs",
+              "RelativeToolTip": "WebAPI\\Dtos\\ProduktDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:52:58.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Student RM4-3073 04.IT\\Documents\\GitHub\\zadanie-4-wariat-1-Gnomok\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-01T07:35:26.903Z"
             }
           ]
         }

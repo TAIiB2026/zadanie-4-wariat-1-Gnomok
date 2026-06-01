@@ -1,22 +1,48 @@
-<table>
-    <thead>
+<div>
+    <h2>Produkty</h2>
+    
+    <div>
+      <input 
+        type="text" 
+        [(ngModel)]="nazwaFilter" 
+        placeholder="Wyszukaj po nazwie..."
+      />
+      <button (click)="filtruj()">Szukaj</button>
+    </div>
+  
+    <div *ngIf="wczytywanie">Wczytywanie...</div>
+  
+    <table *ngIf="!wczytywanie && data.length > 0">
+      <thead>
         <tr>
-            <th>ID</th>
-            <th>Nazwa</th>
-            <th>Cena</th>
-            <th>Data ważności</th>
-            <th>Edycja</th>
+          <th>ID</th>
+          <th>Nazwa</th>
+          <th>Cena</th>
+          <th>Data ważności</th>
+          <th>Akcje</th>
         </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let d of (data$ | async)">
-            <td>{{d.id}}</td>
-            <td>{{d.nazwa}}</td>
-            <td>{{d.cena | currency:'PLN'}}</td>
-            <td>{{d.dataWaznosci | date:"shortDate"}}</td>
-            <td><a [routerLink]="d.id + ''">Przejdź do edycji</a></td>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of data">
+          <td>{{d.id}}</td>
+          <td>{{d.nazwa}}</td>
+          <td>{{d.cena | currency:'PLN'}}</td>
+          <td>{{d.dataWaznosci | date:"shortDate"}}</td>
+          <td>
+            <a [routerLink]="d.id + ''">Edytuj</a>
+            <button (click)="usun(d.id)">Usuń</button>
+          </td>
         </tr>
-    </tbody>
-</table>
-
-<a routerLink="/dodawanie">Przejdź do dodawania</a>
+      </tbody>
+    </table>
+  
+    <div *ngIf="!wczytywanie && data.length === 0">Brak produktów.</div>
+  
+    <div *ngIf="!wczytywanie">
+      <button (click)="poprzedniaStrona()" [disabled]="pageNumber === 1">← Poprzednia</button>
+      Strona {{pageNumber}} z {{iloscStron}}
+      <button (click)="nastepnaStrona()" [disabled]="pageNumber === iloscStron">Następna →</button>
+    </div>
+  </div>
+  
+  <a routerLink="/dodawanie">Dodaj nowy produkt</a>

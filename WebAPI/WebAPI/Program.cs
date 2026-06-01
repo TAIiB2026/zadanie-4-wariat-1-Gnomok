@@ -1,3 +1,5 @@
+using WebAPI.Services;
+
 namespace WebAPI
 {
     public class Program
@@ -6,7 +8,7 @@ namespace WebAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            builder.Services.AddScoped<ProduktService>();
 
             builder.Services.AddControllers();
 
@@ -25,7 +27,6 @@ namespace WebAPI
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -33,11 +34,8 @@ namespace WebAPI
             }
 
             app.UseCors("Local4104Policy");
-
             app.UseAuthorization();
-
             app.MapControllers();
-
             app.Run();
         }
     }

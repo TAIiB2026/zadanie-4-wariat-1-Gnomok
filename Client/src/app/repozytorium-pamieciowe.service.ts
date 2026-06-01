@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GetDataInterface } from './interfaces/get-data.interface';
+import { GetDataInterface, PaginatedResponse } from './interfaces/get-data.interface';
 import { FormSubmitInterface } from './interfaces/form-submit.interface';
 import { Observable, of } from 'rxjs';
 import { ProduktClass } from './classes/produkt.class';
@@ -15,6 +15,38 @@ export class RepozytoriumPamiecioweService implements GetDataInterface, FormSubm
     new ProduktClass(this.idGenerator++, "Gruszka", 5.9, new Date(2026, 9, 12))
   ]
 
+  Get(pageNumber: number = 1, pageSize: number = 5, nazwaFilter: string = ''): Observable<PaginatedResponse> {
+    let filtered = this.data;
+    
+    if (nazwaFilter && nazwaFilter.trim() !== '') {
+      filtered = this.data.filter(x => 
+        x.nazwa.toLowerCase().includes(nazwaFilter.toLowerCase())
+      );
+    }
+
+    const totalCount = filtered.length;
+    const skip = (pageNumber - 1) * pageSize;
+    const paged = filtered.slice(skip, skip + pageSize);
+
+    const response: PaginatedResponse = {
+      data: paged.map(x => new ProduktClass(x.id, x.nazwa, x.cena, x.dataWaznosci)),
+      totalCount: totalCount,
+      pageNumber: pageNumber,
+      pageSize: pageSize
+    };
+
+    return of(response);
+  }
+
+  GetByID(id: number): Observable<ProduktClass> {
+    const obj = this.data.find(x => x.id === id);
+    if(obj) {
+      const kopia = new ProduktClass(obj.id, obj.nazwa, obj.cena, obj.dataWaznosci);
+      return of(kopia);
+    }
+    throw new Error("Nie znaleziono obiektu.");
+  }
+
   Post(nazwa: string, cena: number, data: Date): Observable<boolean> {
     const newObj = new ProduktClass(this.idGenerator++, nazwa, cena, data);
     this.data.push(newObj);
@@ -29,22 +61,15 @@ export class RepozytoriumPamiecioweService implements GetDataInterface, FormSubm
       obj.dataWaznosci = data;
       return of(true);
     }
-
     return of(false);
   }
 
-  Get(): Observable<ProduktClass[]> {
-    const kopia = this.data.map(x => new ProduktClass(x.id, x.nazwa, x.cena, x.dataWaznosci));
-    return of(kopia);
-  }
-
-  GetByID(id: number): Observable<ProduktClass> {
-    const obj = this.data.find(x => x.id === id);
-    if(obj) {
-      const kopia = new ProduktClass(obj.id, obj.nazwa, obj.cena, obj.dataWaznosci);
-      return of(kopia);
+  Delete(id: number): Observable<boolean> {
+    const index = this.data.findIndex(x => x.id === id);
+    if(index !== -1) {
+      this.data.splice(index, 1);
+      return of(true);
     }
-
-    throw new Error("Nie znaleziono obiektu.");
+    return of(false);
   }
 }
