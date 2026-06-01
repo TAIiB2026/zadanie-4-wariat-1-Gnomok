@@ -11,6 +11,7 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePl from '@angular/common/locales/pl';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localePl);
 
@@ -23,7 +24,8 @@ registerLocaleData(localePl);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     RepozytoriumPamiecioweService, 
